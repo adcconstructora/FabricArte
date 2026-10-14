@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diseño, fabricación, carpintería, cocinas, closets, remodelaciones y follajes.">
+  <title>FabricArte | Diseño & Construcción</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVEGACIÓN
+       ========================= -->
+  <header class="navbar">
+    <a href="#" class="logo">FabricArte<span>.</span></a>
+
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#cotizar">Cotizar</a>
+    </nav>
+  </header>
+
+
+  <!-- =========================
+       HERO
+       ========================= -->
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">DISEÑO · FABRICACIÓN · REMODELACIÓN</p>
+        <h1>Espacios que<br><em>se sienten tuyos.</em></h1>
+        <p class="hero-description">
+          Diseñamos y transformamos espacios residenciales y comerciales
+          con soluciones hechas a la medida.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#proyectos" class="button button-dark">Ver proyectos</a>
+          <a href="#cotizar" class="button button-light">Cotizar proyecto →</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- Reemplaza esta imagen por tu foto principal -->
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85" alt="Interior moderno">
+      </div>
+    </section>
+
+
+    <!-- =========================
+         INTRO
+         ========================= -->
+    <section class="intro">
+      <p class="eyebrow">NUESTRO TRABAJO</p>
+      <h2>Diseñamos cada espacio<br>pensando en cómo lo vas a vivir.</h2>
+      <p>
+        Desde una cocina completamente nueva hasta una remodelación integral,
+        combinamos diseño, materiales y fabricación para crear espacios
+        funcionales y con personalidad.
+      </p>
+    </section>
+
+
+    <!-- =========================
+         SERVICIOS
+         ========================= -->
+    <section id="servicios" class="services-section">
+      <div class="section-heading">
+        <p class="eyebrow">SERVICIOS</p>
+        <h2>Una solución para<br>cada espacio.</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card service-large">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85" alt="Cocina moderna">
+          <div class="service-overlay">
+            <span>01</span>
+            <h3>Cocinas</h3>
+            <p>Diseño y fabricación a la medida.</p>
+            <a href="#proyectos">Ver proyectos →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="Closet moderno">
+          <div class="service-overlay">
+            <span>02</span>
+            <h3>Closets</h3>
+            <p>Organización y diseño personalizado.</p>
+            <a href="#proyectos">Ver proyectos →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Remodelación">
+          <div class="service-overlay">
+            <span>03</span>
+            <h3>Remodelaciones</h3>
+            <p>Transformaciones completas de espacios.</p>
+            <a href="#proyectos">Ver proyectos →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=85" alt="Follaje interior">
+          <div class="service-overlay">
+            <span>04</span>
+            <h3>Follajes</h3>
+            <p>Muros verdes y soluciones naturales.</p>
+            <a href="#proyectos">Ver proyectos →</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=1200&q=85" alt="Carpintería">
+          <div class="service-overlay">
+            <span>05</span>
+            <h3>Carpintería</h3>
+            <p>Mobiliario hecho a la medida.</p>
+            <a href="#proyectos">Ver proyectos →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PROYECTOS / GALERÍA
+         ========================= -->
+    <section id="proyectos" class="projects-section">
+      <div class="section-heading">
+        <p class="eyebrow">PROYECTOS</p>
+        <h2>Hecho a la medida.</h2>
+        <p>Explora algunos de nuestros trabajos.</p>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="cocinas">Cocinas</button>
+        <button class="filter" data-filter="closets">Closets</button>
+        <button class="filter" data-filter="remodelaciones">Remodelaciones</button>
+        <button class="filter" data-filter="follajes">Follajes</button>
+        <button class="filter" data-filter="carpinteria">Carpintería</button>
+      </div>
+
+      <div class="gallery">
+
+        <button class="gallery-item" data-category="cocinas"
+                data-image="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=90"
+                data-title="Cocina contemporánea"
+                data-description="Cocina diseñada y fabricada a la medida.">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Cocina contemporánea">
+          <div class="gallery-caption">
+            <span>Cocinas</span>
+            <strong>Cocina contemporánea</strong>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-category="closets"
+                data-image="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=1800&q=90"
+                data-title="Closet residencial"
+                data-description="Mobiliario personalizado para aprovechar cada centímetro.">
+          <img src="https://images.unsplash.com/photo-1617104678098-de229db51175?auto=format&fit=crop&w=1000&q=85" alt="Closet">
+          <div class="gallery-caption">
+            <span>Closets</span>
+            <strong>Closet residencial</strong>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-category="remodelaciones"
+                data-image="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=90"
+                data-title="Remodelación integral"
+                data-description="Transformación completa de interiores.">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85" alt="Remodelación">
+          <div class="gallery-caption">
+            <span>Remodelaciones</span>
+            <strong>Remodelación integral</strong>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-category="follajes"
+                data-image="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1800&q=90"
+                data-title="Muro verde"
+                data-description="Diseño de follaje para interior o exterior.">
+          <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=85" alt="Muro verde">
+          <div class="gallery-caption">
+            <span>Follajes</span>
+            <strong>Muro verde</strong>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-category="carpinteria"
+                data-image="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?auto=format&fit=crop&w=1800&q=90"
+                data-title="Mobiliario a medida"
+                data-description="Diseño y fabricación personalizada.">
+          <img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?auto=format&fit=crop&w=1000&q=85" alt="Carpintería">
+          <div class="gallery-caption">
+            <span>Carpintería</span>
+            <strong>Mobiliario a medida</strong>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-category="cocinas"
+                data-image="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1800&q=90"
+                data-title="Cocina minimalista"
+                data-description="Diseño limpio y funcional.">
+          <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1000&q=85" alt="Cocina minimalista">
+          <div class="gallery-caption">
+            <span>Cocinas</span>
+            <strong>Cocina minimalista</strong>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         COTIZACIÓN
+         ========================= -->
+    <section id="cotizar" class="quote-section">
+
+      <div class="quote-intro">
+        <p class="eyebrow">COTIZA TU PROYECTO</p>
+        <h2>Cuéntanos<br>qué tienes en mente.</h2>
+        <p>
+          Entre más información nos compartas, mejor podremos entender
+          tu proyecto y preparar una propuesta.
+        </p>
+      </div>
+
+      <form class="quote-form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="(664) 000 0000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="tipo">¿Qué tipo de trabajo necesitas?</label>
+          <select id="tipo" name="tipo">
+            <option value="">Selecciona una opción</option>
+            <option>Cocina</option>
+            <option>Closet</option>
+            <option>Remodelación</option>
+            <option>Follaje / Muro verde</option>
+            <option>Carpintería</option>
+            <option>Pérgola</option>
+            <option>Otro</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ancho">Ancho aproximado</label>
+            <input type="text" id="ancho" name="ancho" placeholder="Ej. 3.20 m">
+          </div>
+
+          <div class="form-group">
+            <label for="alto">Alto aproximado</label>
+            <input type="text" id="alto" name="alto" placeholder="Ej. 2.40 m">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="material">Tipo de material</label>
+            <select id="material" name="material">
+              <option value="">Selecciona una opción</option>
+              <option>Melamina</option>
+              <option>MDF</option>
+              <option>Madera natural</option>
+              <option>Triplay</option>
+              <option>Cuarzo</option>
+              <option>Piedra natural</option>
+              <option>Otro / No estoy seguro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="color">Color / acabado</label>
+            <input type="text" id="color" name="color" placeholder="Ej. Nogal claro">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="detalles">Especificaciones del proyecto</label>
+          <textarea id="detalles" name="detalles" rows="6"
+                    placeholder="Cuéntanos qué necesitas, qué te gustaría conservar, estilo que buscas, ubicación, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="fotos">Fotos o referencias</label>
+          <input type="file" id="fotos" name="fotos" multiple accept="image/*">
+          <small>Puedes seleccionar varias imágenes.</small>
+        </div>
+
+        <button type="submit" class="button button-dark submit-button">
+          Solicitar cotización →
+        </button>
+
+        <p class="form-note">
+          Al enviar este formulario, nos pondremos en contacto contigo para revisar los detalles.
+        </p>
+
+      </form>
+    </section>
+
+
+    <!-- =========================
+         CTA FINAL
+         ========================= -->
+    <section class="final-cta">
+      <p class="eyebrow">¿TIENES UN PROYECTO?</p>
+      <h2>Hagámoslo realidad.</h2>
+      <a href="#cotizar" class="button button-dark">Empezar proyecto →</a>
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer>
+    <div class="footer-brand">
+      <span class="logo">ESTUDIO<span>.</span></span>
+      <p>Diseño · Fabricación · Remodelación</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#cotizar">Cotizar</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+    </div>
+
+    <p class="copyright">© 2026 Estudio. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <!-- =========================
+       LIGHTBOX
+       ========================= -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">×</button>
+
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="">
+      <div class="lightbox-info">
+        <span id="lightbox-category"></span>
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Menú móvil
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      menuToggle.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.classList.remove("open");
+      });
+    });
+
+
+    // Filtros de proyectos
+    const filters = document.querySelectorAll(".filter");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    filters.forEach(filter => {
+      filter.addEventListener("click", () => {
+        filters.forEach(btn => btn.classList.remove("active"));
+        filter.classList.add("active");
+
+        const category = filter.dataset.filter;
+
+        galleryItems.forEach(item => {
+          if (category === "all" || item.dataset.category === category) {
+            item.classList.remove("hidden");
+          } else {
+            item.classList.add("hidden");
+          }
+        });
+      });
+    });
+
+
+    // Lightbox / imágenes ampliables
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const lightboxTitle = document.getElementById("lightbox-title");
+    const lightboxCategory = document.getElementById("lightbox-category");
+    const lightboxDescription = document.getElementById("lightbox-description");
+    const lightboxClose = document.querySelector(".lightbox-close");
+
+    galleryItems.forEach(item => {
+      item.addEventListener("click", () => {
+        lightboxImage.src = item.dataset.image;
+        lightboxTitle.textContent = item.dataset.title;
+        lightboxDescription.textContent = item.dataset.description;
+        lightboxCategory.textContent = item.querySelector(".gallery-caption span").textContent;
+
+        lightbox.classList.add("active");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("no-scroll");
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("no-scroll");
+    }
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeLightbox();
+    });
+
+
+    // Formulario
+    const form = document.querySelector(".quote-form");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      // Aquí puedes conectar el formulario con:
+      // WhatsApp, Formspree, EmailJS, PHP, Firebase, etc.
+
+      alert("¡Gracias! Tu solicitud fue preparada. Ahora conecta este formulario con tu WhatsApp o correo.");
+    });
+  </script>
+
+</body>
+</html>
